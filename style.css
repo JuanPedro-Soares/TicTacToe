@@ -34,7 +34,7 @@ body{
 }
 .O{
   background-image: url("./img/O.svg");
-  background-size: 5rem;
+  background-size: 5.5rem;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -142,4 +142,89 @@ html {
   border-radius: 10px;
   text-align: center;
   text-transform: uppercase;
+}
+@media(max-width:800px) {
+  .container-body{
+    width: 25rem;
+  }
+  .placar{
+    width: 22rem;
+  }
+  .container{
+    width: 23rem;
+    margin:0 auto;
+    margin-bottom: 1rem;
+  }
+  .mesa{
+    width: 20rem;
+  }
+  #clear{
+  width: 50%; 
+}
+#clear img{
+  height: 2rem;
+  width: 2rem;
+}
+#clearplacar{
+  width: 50%; 
+}
+#clearplacar img{
+  height: 100%;
+  width: 100%;
+}
+
+.X{
+ 
+  background-size: 3rem;
+ 
+}
+.O{
+  background-size: 3.5rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; 
+}
+}
+
+@media(max-width:400px) {
+  .container-body{
+    width: 25rem;
+  }
+  .placar{
+    width: 20rem;
+  }
+  .container{
+    width: 23rem;
+    margin:0 auto;
+    margin-bottom: 1rem;
+  }
+  .mesa{
+    width: 15rem;
+    height: 12rem;
+  }
+  #clear{
+  width: 30%; 
+  margin-right: .625rem;
+}
+#clear img{
+  height: 2rem;
+  width: 2rem;
+}
+#clearplacar{
+  width: 40%; 
+}
+
+.X{
+ 
+  background-size: 2rem;
+ 
+}
+.O{
+  background-size: 2.5rem;
+}
 }
