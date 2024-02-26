@@ -1,0 +1,145 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+.mesa{
+  margin-left: auto;
+  margin-right: auto;
+  width: 35rem;
+  height: 30rem;
+  background-color: #f6f6f6;;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  background: rgb(25, 42, 50);
+}
+.espaco{
+  box-sizing: border-box;
+  background: rgb(31, 53, 64);
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  cursor: pointer;
+  box-shadow: rgb(16, 33, 43) 0px 8px 0px;
+  border-radius: 10px;
+}
+.X{
+  background-image: url("./img/X.svg");
+  background-size: 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.O{
+  background-image: url("./img/O.svg");
+  background-size: 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vitoria{
+  font-size: 3rem;
+  color: #f6f6f6;
+  text-align: center;
+  width: 100%;
+  margin-right: 20%;
+  margin-left: 20%;
+  
+}
+.inativo{
+  opacity: 0;
+}
+.PlacarClear{
+  width: 100%;
+}
+.placar{
+width: 35rem;
+display: flex;
+margin:0 auto;
+margin-top: 1rem;
+}
+html {
+  background: rgb(25, 42, 50);
+   height:100%;
+}
+#clear{
+  width: 20%; 
+  border: 3px solid rgb(43, 71, 87);
+  border-radius: 30%;
+  cursor: pointer;
+}
+#clear img{
+  height: 2rem;
+  width: 2rem;
+}
+#clearplacar{
+  width: 20%; 
+  background-color: black;
+  border: 3px solid rgb(43, 71, 87);
+  border-radius: 30%;
+  cursor: pointer;
+}
+#clearplacar img{
+  height: 100%;
+  width: 100%;
+}
+.container{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  width: 35rem;
+}
+.container-body{
+  width: 35rem;
+  margin: 0 auto;
+}
+.vitoria{
+    padding: 10px 31px;
+    background: rgb(31, 53, 64);
+    box-shadow: rgb(16, 33, 43) 0px 4px 0px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-align: center
+}
+.vitoriasX{
+  margin-right: .625rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  flex-direction: column;
+  color: rgb(25, 42, 50);
+  background: rgb(44, 197, 190);
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.empates{
+  margin-right: .625rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  flex-direction: column;
+  color: rgb(25, 42, 50);
+    background: rgb(168, 190, 201);
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.vitoriasO{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  color: rgb(25, 42, 50);
+    background: rgb(242, 178, 55);
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
