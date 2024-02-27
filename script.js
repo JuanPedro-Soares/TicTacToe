@@ -25,8 +25,9 @@ function resetplacar(){
 }
 
 function handleClick(event){
-  event.preventDefault();
-  removeClass(square)
+  event.preventDefault();    
+      if(!VerificarVitoria(Jogador))
+      removeClass(square)
 }
 function removeClass(square){
   square.forEach((element)=>{
@@ -56,7 +57,7 @@ function adicionar(event) {
       vitoria.innerText=(Jogador +" wins!")
       setTimeout(() => {
         removeClass(square);
-      }, 4000);
+      }, 2000);
         if(Jogador==='X'){
           placarNumberx=placarNumberx+variavelcontrole;
           placarx.innerText=placarNumberx;
@@ -79,6 +80,9 @@ function adicionar(event) {
         placarNumberTie=placarNumberTie+variavelcontrole;
           empates.innerText=placarNumberTie;
           vitoria.innerText=("Tie!")
+          setTimeout(() => {
+            removeClass(square);
+          }, 2000);
       }
       else{
     alternarJogador();
